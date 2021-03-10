@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+<servicedata serviceid="123456" searchpostcode="BL1 8AN" easting="123456789" northing="123456798" nationalservice="FALSE" acceptingnewpatients="TRUE" currentservicedemand="1" lastupdated="2021-02-03T09:35:26Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="serviceDetails.xsd">
+
+    <servicename>Some service name</servicename>
+
+    <publicname>Some service name</publicname>
+    
+    <openinghours>
+        <monday>
+            <opens>08:00</opens>
+            <closes>12:00</closes>
+        </monday>
+        <monday>
+            <opens>13:00</opens>
+            <closes>18:00</closes>
+        </monday>
+        <tuesday>
+            <opens>09:00</opens>
+            <closes>18:00</closes>
+        </tuesday>
+        <wednesday>
+            <opens>09:00</opens>
+            <closes>18:00</closes>
+        </wednesday>
+        <thursday>
+            <opens>09:00</opens>
+            <closes>18:00</closes>
+        </thursday>
+        <friday>
+            <opens>09:00</opens>
+            <closes>18:00</closes>
+        </friday>
+        <publicholiday>
+            <opens>10:00</opens>
+            <closes>16:00</closes>
+        </publicholiday>
+        <variation>
+            <date>25-12-2021</date>
+            <opens>11:00</opens>
+            <closes>16:00</closes>
+        </variation>
+        <variation>
+            <date>26-12-2021</date>
+            <opens>11:00</opens>
+            <closes>16:00</closes>
+        </variation>
+        <notes>
+            Every Tuesday we hold a Group Therapy session from 8.30-10am. Between 10.30am and 1.30pm we offer one-to-one sessions. These are either pre-treatment consultations, individual counselling sessions or family meetings.
+        </notes>
+    </openinghours>
+
+    <contactdetails>
+        <contactname>
+            Debbie Parsons
+        </contactname>
+        <contactposition>
+            Drop-in Manager
+        </contactposition>
+        <publicwebsite>http://www.somewebsite.co.uk</publicwebsite>
+        <privateweblink>http://www.somewebsite.co.uk</privateweblink>
+        <publictelephone>01234 567890</publictelephone>
+        <publictelephone>0800 567890</publictelephone>
+        <privatetelephone>01234 567890</privatetelephone>
+        <publicemail>public1@email.nhs.uk</publicemail>
+        <publicemail>public2@email.nhs.uk</publicemail>
+        <privateemail>private@email.nhs.uk</privateemail>
+        <facebook></facebook>
+        <twitter></twitter>
+        <instagram></instagram>
+        <youtube></youtube>
+        <address>
+            <address1>432 Halliwell Road</address1>
+            <address2>Halliwell</address2>
+            <address3></address3>
+            <town>Bolton</town>
+            <postcode>BL1 8AN</postcode>
+        </address>
+    </contactdetails>
+
+    <serviceoverview>
+        
+    </serviceoverview>
+    
+    <servicedetails>
+        
+        <servicesoffered>
+            <servicetypename>Relationship Counselling</servicetypename>
+            <servicetypename>Sex Therapy</servicetypename>
+            <servicetypename>Young People's Counselling</servicetypename>
+            <servicetypename>Domestic Abuse Perpetrator Program</servicetypename>
+            <servicetypename>Women’s support service</servicetypename>
+        </servicesoffered>
+        
+        <facilities>
+            <facility>Toilets</facility>
+            <facility>Parking</facility>
+            <facility>Baby changing</facility>
+            <facility>Lift</facility>
+            <facility>Sporting changing</facility>
+        </facilities>
+        
+        <accessibility>
+            <p>Parking accessible for people with disabilities</p>
+            <p>Toilet facilities for people with disabilities</p>
+            <p>Wheelchair accessible</p>
+        </accessibility>
+        
+        <type>
+            Outpost
+        </type>
+        
+        <areacovered>
+            Bolton
+        </areacovered>
+        
+        <parentorganisation></parentorganisation>
+        
+        <cost></cost>
+        
+        <referalinformation>
+            <general></general>
+            <ambulancereferralinfo>
+                <p>Note that Covid-specific instructions are currently in place. Refer to SECAmb Clinical Bulletin C346 (linked to sharepoint document in public website field)</p>
+                <p>Refer to Major Trauma Decision Tree for acceptance criteria - Contact the Critical Care Desk if unsure</p>
+                <p>Regional Specialist Service for the South East Coast.</p>
+                <p>One of a national network of specialist centres which concentrate expertise and resources to give the best possible care, including intensive care and brain surgery.</p>
+            </ambulancereferralinfo>
+        </referalinformation>
+        
+        <restrictions>
+            This service will see 18+ only
+         </restrictions>
+        
+    </servicedetails>
+    
+    <generalnotes>
+        <forpatients>
+            Please note, for coil or implant fittings you MUST make an appointment. Procedures cannot be performed at walk-in clinics.
+        </forpatients>
+        <forhcps>
+            The referral form for Achieve Bolton Treatment and Recovery Service can be found via the following link: http://psnc.org.uk/bolton-lpc/wp-content/uploads/sites/67/2018/08/Pharmacy-Needle-Exchange-Service-Spec-2018-Final.docx
+        </forhcps>
+        <other>
+            Psychosocial interventions are a range of evidence based therapies that aim to support individuals undergoing substance misuse treatment. Psychosocial interventions are not designed to be offered in isolation of other support options but aim to compliment other interventions. Getting help from the psychosocial Interventions team can significantly improve the chances of you achieving your goals.
+        </other>
+    </generalnotes>
+
+</servicedata>
+
+
+

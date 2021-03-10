@@ -1,0 +1,107 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+ul {
+    list-style: none;
+    margin:0;
+}
+
+ul ul {
+    border-top:1px solid #ccc;
+    padding-top:10px;
+}
+
+ul ul ul {
+    border-top:0;
+}
+
+li {
+    margin:0 10px 20px 70px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align:center;
+    color:#fff;
+    background:#005eb8;
+    padding:15px 20px 20px 20px;
+}
+
+h2, h3, h4, h5 {
+    margin:0;
+    padding:0;
+}
+
+h2, ul p {
+    font-size: 18px;
+}
+
+h3, ul ul p {
+    font-size: 16px;
+}
+
+h4, ul ul ul p {
+    font-size: 14px;
+}
+
+h5, ul ul ul ul p {
+    font-size: 12px;
+}
+
+p {
+    margin:0;
+    padding:4px 0 4px 0;
+}
+
+table.attributes {
+    margin:10px auto 40px auto;
+    padding:0;
+    border:1px solid #ccc;
+}
+
+table.attributes th {
+    text-align:right;
+}
+
+table.attributes th,td {
+    padding:4px;
+}
+
+table.attributes thead th {
+    text-align:center;
+    font-size:24px;
+    background:#ddeaf6;
+    padding:4px 20px 4px 20px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight:normal;
+    position: absolute;
+    margin-left:10px;
+    margin-top:-5px;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
