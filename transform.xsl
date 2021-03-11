@@ -40,46 +40,52 @@
                     <xsl:if test="count(*) = 0">
                         <p><xsl:value-of select ="."/></p>
                     </xsl:if>
-                    <xsl:for-each select="*">
-                    <ul>
-                        <li>
-                            <h3 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h3>
-                            <xsl:if test="count(*) = 0">
-                                <p><xsl:value-of select ="."/></p>
-                            </xsl:if>
-                            <xsl:for-each select="*">
-                                <xsl:if test="local-name()='p'">
+                    <xsl:if test="count(*) != 0">
+                        <ul>
+                        <xsl:for-each select="*">
+                            <li>
+                                <h3 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h3>
+                                <xsl:if test="count(*) = 0">
                                     <p><xsl:value-of select ="."/></p>
                                 </xsl:if>
-                                <xsl:if test="not(local-name()='p')">
+                                <xsl:if test="count(*) != 0">
                                     <ul>
-                                        <li>
-                                            <h4 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h4>
-                                            <xsl:if test="count(*) = 0">
-                                                <p><xsl:value-of select ="."/></p>
-                                            </xsl:if>
-                                            <xsl:for-each select="*">
-                                                <xsl:if test="local-name()='p'">
+                                    <xsl:for-each select="*">
+                                        <xsl:if test="local-name()='p'">
+                                            <li><xsl:value-of select ="."/></li>
+                                        </xsl:if>
+                                        <xsl:if test="not(local-name()='p')">
+                                            <li>
+                                                <h4 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h4>
+                                                <xsl:if test="count(*) = 0">
                                                     <p><xsl:value-of select ="."/></p>
                                                 </xsl:if>
-                                                <xsl:if test="not(local-name()='p')">
-                                                <ul>
-                                                    <li>
-                                                        <h5 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h5>
-                                                        <xsl:if test="count(*) = 0">
-                                                            <p><xsl:value-of select ="."/></p>
+                                                <xsl:if test="count(*) != 0">
+                                                    <ul>
+                                                    <xsl:for-each select="*">
+                                                        <xsl:if test="local-name()='p'">
+                                                            <li><xsl:value-of select ="."/></li>
                                                         </xsl:if>
-                                                    </li>
-                                                </ul>
+                                                        <xsl:if test="not(local-name()='p')">
+                                                        <li>
+                                                            <h5 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h5>
+                                                            <xsl:if test="count(*) = 0">
+                                                                <p><xsl:value-of select ="."/></p>
+                                                            </xsl:if>
+                                                        </li>
+                                                        </xsl:if>
+                                                    </xsl:for-each>
+                                                    </ul>
                                                 </xsl:if>
-                                            </xsl:for-each>
-                                        </li>
+                                            </li>
+                                        </xsl:if>
+                                    </xsl:for-each>
                                     </ul>
                                 </xsl:if>
-                            </xsl:for-each>
-                        </li>
-                    </ul>
-                    </xsl:for-each>
+                            </li>
+                        </xsl:for-each>
+                        </ul>
+                    </xsl:if>
                 </li>
                 </xsl:for-each>
             </ul>
