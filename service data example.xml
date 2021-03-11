@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="transform.xsl"?>
-<servicedata serviceid="123456" searchpostcode="BL1 8AN" easting="123456789" northing="123456798" nationalservice="FALSE" acceptingnewpatients="TRUE" currentservicedemand="1" lastupdated="2021-02-03T09:35:26Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="serviceDetails.xsd">
+<servicedata serviceid="123456" searchpostcode="BL1 8AN" easting="123456789" northing="123456798" nationalservice="FALSE" acceptingnewpatients="TRUE" chargeableservice="false" currentservicedemand="1" lastupdated="2021-02-03T09:35:26Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="serviceDetails.xsd">
 
     <servicename>Some service name</servicename>
 
