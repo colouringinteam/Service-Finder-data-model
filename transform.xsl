@@ -33,7 +33,7 @@
                 </tbody>
             </table>
             
-            <ul>
+            <ul class="primary">
                 <xsl:for-each select="*">
                 <li>
                     <h2 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h2>
