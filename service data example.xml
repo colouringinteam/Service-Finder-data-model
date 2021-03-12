@@ -2,11 +2,11 @@
 <?xml-stylesheet type="text/xsl" href="transform.xsl"?>
 <servicedata serviceid="123456" odscode="B86019" searchpostcode="BL1 8AN" easting="123456789" northing="123456798" nationalservice="FALSE" acceptingnewpatients="TRUE" chargeableservice="FALSE" currentservicedemand="1" lastupdated="2021-02-03T09:35:26Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <servicename>Some service name</servicename>
+    <servicename required="YES">Some service name</servicename>
 
     <publicname>Some service name</publicname>
     
-    <openinghours>
+    <openinghours required="ONEOF">
         <monday>
             <opens>08:00</opens>
             <closes>12:00</closes>
@@ -84,7 +84,7 @@
     
     <servicedetails>
         
-        <servicesoffered>
+        <servicesoffered required="ONEOF">
             <servicetypename>Relationship Counselling</servicetypename>
             <servicetypename>Sex Therapy</servicetypename>
             <servicetypename>Young People's Counselling</servicetypename>
@@ -106,11 +106,11 @@
             <p>Wheelchair accessible</p>
         </accessibility>
         
-        <type>
+        <type required="YES">
             Outpost
         </type>
         
-        <areacovered>
+        <areacovered required="YES">
             Bolton
         </areacovered>
         
@@ -123,7 +123,7 @@
         
         <cost></cost>
         
-        <referalinformation>
+        <referalinformation required="ONEOF">
             <general></general>
             <ambulancereferralinfo>
                 <p>Note that Covid-specific instructions are currently in place. Refer to SECAmb Clinical Bulletin C346 (linked to sharepoint document in public website field)</p>
@@ -133,7 +133,7 @@
             </ambulancereferralinfo>
         </referalinformation>
         
-        <restrictions>
+        <restrictions required="YES">
             This service will see 18+ only
          </restrictions>
         
@@ -152,6 +152,3 @@
     </generalnotes>
 
 </servicedata>
-
-
-
