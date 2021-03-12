@@ -11,9 +11,8 @@
             <title>Service Finder preferred data model</title>
 
             <link rel="stylesheet" href="style.css"/>
-
-            <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'/>
-            <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"/>
         </head>
         <body>
 
@@ -106,7 +105,5 @@
             <xsl:value-of select="$currPath"/>
         </xsl:if>
     </xsl:template>
-
-
     
 </xsl:stylesheet>
