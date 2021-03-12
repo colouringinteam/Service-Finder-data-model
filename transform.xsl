@@ -12,14 +12,33 @@
 
             <link rel="stylesheet" href="style.css"/>
             <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css"/>
+            
         </head>
         <body>
 
             <h1>Service Finder preferred data model</h1>
 
+            <table class="notes">
+                <thead>
+                    <tr><th colspan="2">Notes</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <p>The model below represents data for a single example service. The data elements you see in the table below are all attributes (e.g. <i>serviceid="123456"</i>) of the root node of the XML for this service.</p>
+                            <p>In general, attributes have been used for data that is primarily in place to allow the system to work correctly, and XML nodes/elements are used for anything designed to be human-readable.</p>
+                            <p>Root node attributes would all be mandatory, with appropriate 'null' values to be agreed within the API specification.</p>
+                            <p>Within the graphical representation of the model two highlight colours are used. <span style="background:#FFEEEE;">Pink</span> elements are mandatory for all services. <span style="background:#FFEECC;">Orange</span> elements show sets where at least one of the child elements is required.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
             <table class="attributes">
                 <thead>
-                    <th colspan="2">Root node attributes</th>
+                    <tr>
+                        <th colspan="2">Root node attributes</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <xsl:for-each select="@*">
@@ -33,7 +52,15 @@
             
             <ul class="primary">
                 <xsl:for-each select="*">
-                <li>
+                    <li>
+                    <xsl:choose>
+                        <xsl:when test="@required='YES'">
+                            <xsl:attribute name="class"><xsl:text>required</xsl:text></xsl:attribute>
+                        </xsl:when>
+                        <xsl:when test="@required='ONEOF'">
+                            <xsl:attribute name="class"><xsl:text>oneof</xsl:text></xsl:attribute>
+                        </xsl:when>
+                    </xsl:choose>
                     <h2 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h2>
                     <xsl:if test="count(*) = 0">
                         <p><xsl:value-of select ="."/></p>
@@ -42,6 +69,14 @@
                         <ul>
                         <xsl:for-each select="*">
                             <li>
+                            <xsl:choose>
+                                <xsl:when test="@required='YES'">
+                                    <xsl:attribute name="class"><xsl:text>required</xsl:text></xsl:attribute>
+                                </xsl:when>
+                                <xsl:when test="@required='ONEOF'">
+                                    <xsl:attribute name="class"><xsl:text>oneof</xsl:text></xsl:attribute>
+                                </xsl:when>
+                            </xsl:choose>
                                 <h3 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h3>
                                 <xsl:if test="count(*) = 0">
                                     <p><xsl:value-of select ="."/></p>
@@ -54,6 +89,14 @@
                                         </xsl:if>
                                         <xsl:if test="not(local-name()='p')">
                                             <li>
+                                            <xsl:choose>
+                                                <xsl:when test="@required='YES'">
+                                                    <xsl:attribute name="class"><xsl:text>required</xsl:text></xsl:attribute>
+                                                </xsl:when>
+                                                <xsl:when test="@required='ONEOF'">
+                                                    <xsl:attribute name="class"><xsl:text>oneof</xsl:text></xsl:attribute>
+                                                </xsl:when>
+                                            </xsl:choose>
                                                 <h4 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h4>
                                                 <xsl:if test="count(*) = 0">
                                                     <p><xsl:value-of select ="."/></p>
@@ -66,6 +109,14 @@
                                                         </xsl:if>
                                                         <xsl:if test="not(local-name()='p')">
                                                         <li>
+                                                            <xsl:choose>
+                                                                <xsl:when test="@required='YES'">
+                                                                    <xsl:attribute name="class"><xsl:text>required</xsl:text></xsl:attribute>
+                                                                </xsl:when>
+                                                                <xsl:when test="@required='ONEOF'">
+                                                                    <xsl:attribute name="class"><xsl:text>oneof</xsl:text></xsl:attribute>
+                                                                </xsl:when>
+                                                            </xsl:choose>
                                                             <h5 class='tooltip'><xsl:value-of select ="local-name()"/><span class="tooltiptext"><xsl:call-template name="genPath"/></span></h5>
                                                             <xsl:if test="count(*) = 0">
                                                                 <p><xsl:value-of select ="."/></p>
