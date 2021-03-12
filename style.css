@@ -1,5 +1,5 @@
 body {
-    font-family:'Open Sans', sans-serif;
+	font-family:'Open Sans', sans-serif;
     margin:0;
     padding:0;
 }
@@ -9,12 +9,14 @@ ul {
     margin:50px 0 20px 20px;
     padding:0px 10px 0 30px;
     border-left:1px solid #999;
-    background:#fff;
+    background:none;
 }
 
 ul.primary {
-    width:600px;
-    margin:50px auto 40px auto;
+    max-width:600px;
+    margin:40px;
+    position:absolute;
+    left:460px;
 }
 
 ul:before {
@@ -52,6 +54,16 @@ ul ul ul {
 
 li {
     padding:10px;
+    margin-bottom:1px;
+}
+
+li.required {
+    background:#FFEEEE;
+}
+
+
+li.oneof li {
+    background:#FFEECC;
 }
 
 h1 {
@@ -88,14 +100,24 @@ p {
     padding:4px 0 4px 0;
 }
 
-table.attributes {
-    margin:10px auto 40px auto;
+table.attributes, table.notes {
+    margin:10px 40px 40px 40px;
     padding:0;
     border:1px solid #ccc;
+    float:left;
+    width:420px;
 }
 
-table.attributes th,td {
+table.attributes {
+    clear:left;
+}
+
+table.attributes th, td {
     padding:4px;
+}
+
+table.notes th, table.notes td {
+    padding:4px 20px 4px 20px;
 }
 
 table.attributes th {
@@ -107,7 +129,7 @@ table.attributes td {
     padding-right:20px;
 }
 
-table.attributes thead th {
+table.attributes thead th, table.notes thead th {
     text-align:center;
     font-size:24px;
     background:#ddeaf6;
