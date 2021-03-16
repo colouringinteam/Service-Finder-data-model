@@ -31,6 +31,14 @@
             <opens>09:00</opens>
             <closes>18:00</closes>
         </friday>
+        <saturday>
+            <opens>09:00</opens>
+            <closes>17:00</closes>
+        </saturday>
+        <sunday>
+            <opens>09:00</opens>
+            <closes>16:00</closes>
+        </sunday>
         <publicholiday>
             <opens>10:00</opens>
             <closes>16:00</closes>
